@@ -1,3 +1,44 @@
+import numpy as np
+from scipy.special import sici
+
+
+def power(x,n):
+    return np.power(x,n)
+
+def sin(x):
+    return np.sin(x)
+
+def cos(x):
+    return np.cos(x)
+
+def sqrt(x):
+    return np.sqrt(x)
+
+def abs(x):
+    return np.abs(x)
+
+def log(x):
+    return np.log(x)
+
+def sign(x):
+    return np.sign(x)
+
+def Si(x):
+    return sici(x)[0]
+
+def Ci(x):
+    return sici(x)[1]
+
+def ArcCoth(x):
+    return 0.5*log((x + 1)/(x - 1))
+
+def Sinc(x):
+    return sin(x)/x
+
+
+
+
+
 def f_psi(u, v, x):
 	return -0.015625*((u*x*cos((u*x)/sqrt(3))*(6*v*x*(9*pow(u,8)*pow(x,4) + pow(u,6)*pow(x,2)*(-264 + (-21 + 16*pow(v,2))*pow(x,2)) - 3*pow(u,4)*(-864 + 16*(-7 + 8*pow(v,2))*pow(x,2) + (-5 + 19*pow(v,2) + 4*pow(v,4))*pow(x,4)) - pow(u,2)*(2592 - 36*(-3 - 2*pow(v,2) + 16*pow(v,4))*pow(x,2) + (3 - 6*pow(v,2) - 33*pow(v,4) + 4*pow(v,6))*pow(x,4)) - 3*(-1 + pow(v,2))*(12*pow(x,2) + 3*pow(v,6)*pow(x,4) - 4*pow(v,4)*pow(x,2)*(6 + pow(x,2)) + pow(v,2)*(864 + 32*pow(x,2) + pow(x,4))))*cos((v*x)/sqrt(3)) + sqrt(3)*(9*pow(u,8)*pow(x,4)*(-6 + pow(v,2)*pow(x,2)) - 3*pow(u,2)*(-5184 + 72*(-3 + 6*pow(v,2) + 16*pow(v,4))*pow(x,2) + (-6 + 54*pow(v,2) + 126*pow(v,4) - 262*pow(v,6))*pow(x,4) + pow(v,2)*pow(-1 + pow(v,2),2)*(1 + 7*pow(v,2))*pow(x,6)) + pow(u,6)*(1584*pow(x,2) - 18*(-7 + 17*pow(v,2))*pow(x,4) - pow(v,2)*(21 + 23*pow(v,2))*pow(x,6)) + pow(u,4)*(-15552 + 2016*(-1 + 2*pow(v,2))*pow(x,2) - 6*(15 - 88*pow(v,2) + 45*pow(v,4))*pow(x,4) + pow(v,2)*(15 + 14*pow(v,2) + 35*pow(v,4))*pow(x,6)) + 36*(-1 + pow(v,2))*(6*pow(x,2) + pow(v,6)*pow(x,4) + 2*pow(v,4)*pow(x,2)*(-30 + pow(x,2)) + pow(v,2)*(432 + 16*pow(x,2) - pow(x,4))))*sin((v*x)/sqrt(3))) + sin((u*x)/sqrt(3))*(sqrt(3)*v*x*(3*pow(u,8)*pow(x,4)*(-36 + 7*pow(v,2)*pow(x,2)) + pow(u,6)*(3888*pow(x,2) + (180 - 834*pow(v,2))*pow(x,4) - pow(v,2)*(39 + 35*pow(v,2))*pow(x,6)) + pow(u,4)*(-5184 + 288*(-13 + 4*pow(v,2))*pow(x,2) + 6*(-18 + 47*pow(v,2) + 97*pow(v,4))*pow(x,4) + pow(v,2)*(15 - 14*pow(v,2) + 23*pow(v,4))*pow(x,6)) + 18*(-1 + pow(v,2))*(12*pow(x,2) + 3*pow(v,6)*pow(x,4) - 4*pow(v,4)*pow(x,2)*(6 + pow(x,2)) + pow(v,2)*(864 + 32*pow(x,2) + pow(x,4))) - 3*pow(u,2)*(3*pow(v,8)*pow(x,6) - pow(v,6)*pow(x,4)*(38 + 7*pow(x,2)) - 12*(144 + 2*pow(x,2) + pow(x,4)) + pow(v,4)*pow(x,2)*(1536 + 120*pow(x,2) + 5*pow(x,4)) - pow(v,2)*(-3456 + 720*pow(x,2) + 38*pow(x,4) + pow(x,6))))*cos((v*x)/sqrt(3)) - 18*(6*pow(u,8)*pow(x,4)*(-3 + pow(v,2)*pow(x,2)) + pow(u,6)*pow(x,2)*(648 - 6*(-5 + 26*pow(v,2))*pow(x,2) + pow(v,2)*(-11 + 24*pow(v,2))*pow(x,4)) - 2*pow(u,4)*(432 - 24*(-13 + 6*pow(v,2))*pow(x,2) + (9 - 47*pow(v,2) - 22*pow(v,4))*pow(x,4) + pow(v,2)*(-3 + pow(v,2) + 13*pow(v,4))*pow(x,6)) + 6*(-1 + pow(v,2))*(6*pow(x,2) + pow(v,6)*pow(x,4) + 2*pow(v,4)*pow(x,2)*(-30 + pow(x,2)) + pow(v,2)*(432 + 16*pow(x,2) - pow(x,4))) + pow(u,2)*(-4*pow(v,8)*pow(x,6) + pow(v,6)*pow(x,4)*(124 + 5*pow(x,2)) - 2*pow(v,4)*pow(x,2)*(288 + 65*pow(x,2)) + 6*(144 + 2*pow(x,2) + pow(x,4)) - pow(v,2)*(1728 - 264*pow(x,2) + 4*pow(x,4) + pow(x,6))))*sin((v*x)/sqrt(3)))))/(pow(u,3)*pow(v,3)*pow(x,6))
 
