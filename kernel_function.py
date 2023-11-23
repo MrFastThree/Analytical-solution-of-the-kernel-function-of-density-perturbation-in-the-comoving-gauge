@@ -69,4 +69,4 @@ def I_B(u, v, x):
     return 6*diPsi(u, v, x) + x*I_psi(u, v, x) + f_B(u, v, x)
 	
 def I_delta(u, v, x):
-    return -2*I_phi(u, v, x) - 2./3.*x*x*I_psi(u, v, x) + 2./3.*x*(6*diPsi(u, v, x) + x*I_psi(u, v, x, i) + f_B(u, v, x, i)) - 2*x*diPsi(u, v, x) + f_rho(u, v, x)
+    return -2*I_phi(u, v, x) - 2./3.*x*x*I_psi(u, v, x) + 2./3.*x*(6*diPsi(u, v, x) + x*I_psi(u, v, x) + f_B(u, v, x)) - 2*x*diPsi(u, v, x) + f_rho(u, v, x)
